@@ -789,7 +789,7 @@ class Urfa_Client
 
             $retCode = $this->urfa->get_int();
             if ($retCode != 0) {
-                return;
+                return $report;
             }
 
             $flags = $this->urfa->get_int();
